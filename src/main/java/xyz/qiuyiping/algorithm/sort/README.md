@@ -8,7 +8,7 @@
 [快速排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/快速排序.gif
 [堆排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/堆排序.gif
 [计数排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/计数排序.gif
-[桶排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/桶排序.gif
+[桶排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/桶排序.png
 [基数排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/基数排序.gif
 
 ### 0、算法概述
