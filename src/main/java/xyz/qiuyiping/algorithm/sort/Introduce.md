@@ -5,9 +5,7 @@
 比较类排序：通过比较来决定元素间的相对次序，由于其时间复杂度不能突破O(nlogn)，因此也称为非线性时间比较类排序。
 非比较类排序：不通过比较来决定元素间的相对次序，它可以突破基于比较排序的时间下界，以线性时间运行，因此也称为线性时间非比较类排序。 
 
-
 0.2 算法复杂度
-
 
 0.3 相关概念
 
@@ -30,7 +28,7 @@
 
 
 1.3 代码实现
-
+```
 function bubbleSort(arr) {
     var len = arr.length;
     for (var i = 0; i < len - 1; i++) {
@@ -44,6 +42,8 @@ function bubbleSort(arr) {
     }
     return arr;
 }
+```
+
 2、选择排序（Selection Sort）
 选择排序(Selection-sort)是一种简单直观的排序算法。它的工作原理：首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。 
 
@@ -57,6 +57,7 @@ n-1趟结束，数组有序化了。
 　　
 
 2.3 代码实现
+```
 function selectionSort(arr) {
     var len = arr.length;
     var minIndex, temp;
@@ -73,6 +74,8 @@ function selectionSort(arr) {
     }
     return arr;
 } 
+```
+
 2.4 算法分析
 表现最稳定的排序算法之一，因为无论什么数据进去都是O(n2)的时间复杂度，所以用到它的时候，数据规模越小越好。唯一的好处可能就是不占用额外的内存空间了吧。理论上讲，选择排序可能也是平时排序一般人想到的最多的排序方法了吧。
 
@@ -92,6 +95,7 @@ function selectionSort(arr) {
 
 
 3.2 代码实现
+```
 function insertionSort(arr) {
     var len = arr.length;
     var preIndex, current;
@@ -106,6 +110,8 @@ function insertionSort(arr) {
     }
     return arr;
 }
+```
+
 3.4 算法分析
 插入排序在实现上，通常采用in-place排序（即只需用到O(1)的额外空间的排序），因而在从后向前扫描过程中，需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。
 
@@ -122,6 +128,7 @@ function insertionSort(arr) {
 
 
 4.3 代码实现
+```
 // 修改于 2019-03-06
 function shellSort(arr) {
     var len = arr.length;
@@ -139,6 +146,8 @@ function shellSort(arr) {
     }
     return arr;
 }
+```
+
 4.4 算法分析
 希尔排序的核心在于间隔序列的设定。既可以提前设定好间隔序列，也可以动态的定义间隔序列。动态定义间隔序列的算法是《算法（第4版）》的合著者Robert Sedgewick提出的。　
 
@@ -153,6 +162,7 @@ function shellSort(arr) {
 
 
 5.3 代码实现
+```
 function mergeSort(arr) {
     var len = arr.length;
     if (len < 2) {
@@ -183,6 +193,8 @@ function merge(left, right) {
  
     return result;
 }
+```
+
 5.4 算法分析
 归并排序是一种稳定的排序方法。和选择排序一样，归并排序的性能不受输入数据的影响，但表现比选择排序好的多，因为始终都是O(nlogn）的时间复杂度。代价是需要额外的内存空间。
 
@@ -199,6 +211,7 @@ function merge(left, right) {
 
 
 6.3 代码实现
+```
 function quickSort(arr, left, right) {
     var len = arr.length,
         partitionIndex,
@@ -231,6 +244,8 @@ function swap(arr, i, j) {
     arr[i] = arr[j];
     arr[j] = temp;
 }
+```
+
 7、堆排序（Heap Sort）
 堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。
 
@@ -242,6 +257,7 @@ function swap(arr, i, j) {
 
 
 7.3 代码实现
+```
 var len;    // 因为声明的多个函数都需要数据长度，所以把len设置成为全局变量
  
 function buildMaxHeap(arr) {   // 建立大顶堆
@@ -286,6 +302,8 @@ function heapSort(arr) {
     }
     return arr;
 }
+```
+
 8、计数排序（Counting Sort）
 计数排序不是基于比较的排序算法，其核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。 作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。
 
@@ -298,6 +316,7 @@ function heapSort(arr) {
 
 
 8.3 代码实现
+```
 function countingSort(arr, maxValue) {
     var bucket = new Array(maxValue + 1),
         sortedIndex = 0;
@@ -320,6 +339,7 @@ function countingSort(arr, maxValue) {
  
     return arr;
 }
+```
 8.4 算法分析
 计数排序是一个稳定的排序算法。当输入的元素是 n 个 0到 k 之间的整数时，时间复杂度是O(n+k)，空间复杂度也是O(n+k)，其排序速度快于任何比较排序算法。当k不是很大并且序列比较集中时，计数排序是一个很有效的排序算法。
 
@@ -335,6 +355,7 @@ function countingSort(arr, maxValue) {
 
 
 9.3 代码实现
+```
 function bucketSort(arr, bucketSize) {
     if (arr.length === 0) {
       return arr;
@@ -375,6 +396,8 @@ function bucketSort(arr, bucketSize) {
  
     return arr;
 }
+```
+
 9.4 算法分析
 桶排序最好情况下使用线性时间O(n)，桶排序的时间复杂度，取决与对各个桶之间数据进行排序的时间复杂度，因为其它部分的时间复杂度都为O(n)。很显然，桶划分的越小，各个桶之间的数据越少，排序所用的时间也会越少。但相应的空间消耗就会增大。 
 
@@ -389,6 +412,7 @@ arr为原始数组，从最低位开始取每个位组成radix数组；
  
 
 10.3 代码实现
+```
 var counter = [];
 function radixSort(arr, maxDigit) {
     var mod = 10;
@@ -413,6 +437,7 @@ function radixSort(arr, maxDigit) {
     }
     return arr;
 }
+```
 10.4 算法分析
 基数排序基于分别排序，分别收集，所以是稳定的。但基数排序的性能比桶排序要略差，每一次关键字的桶分配都需要O(n)的时间复杂度，而且分配之后得到新的关键字序列又需要O(n)的时间复杂度。假如待排数据可以分为d个关键字，则基数排序的时间复杂度将是O(d*2n) ，当然d要远远小于n，因此基本上还是线性级别的。
 
