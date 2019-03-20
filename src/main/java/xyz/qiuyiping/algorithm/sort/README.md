@@ -1,15 +1,15 @@
 [算法分类.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/算法分类.png
 [算法复杂度.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/算法复杂度.png
-[冒泡排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/冒泡排序.png
-[选择排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/选择排序.png
-[插入排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/插入排序.png
-[希尔排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/希尔排序.png
-[归并排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/归并排序.png
-[快速排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/快速排序.png
-[堆排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/堆排序.png
-[计数排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/计数排序.png
-[桶排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/桶排序.png
-[基数排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/基数排序.png
+[冒泡排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/冒泡排序.gif
+[选择排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/选择排序.gif
+[插入排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/插入排序.gif
+[希尔排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/希尔排序.gif
+[归并排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/归并排序.gif
+[快速排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/快速排序.gif
+[堆排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/堆排序.gif
+[计数排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/计数排序.gif
+[桶排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/桶排序.gif
+[基数排序.png]: https://raw.githubusercontent.com/cainiaoqiu/algorithm/master/src/main/resources/pic/sort/基数排序.gif
 
 ### 0、算法概述
 #### 0.1 算法分类
